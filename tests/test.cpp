@@ -10,18 +10,7 @@ void func(const int& time, const std::string& str ) {
     std::this_thread::sleep_for(std::chrono::seconds(time));
 
 }
-void func2(const int& time, const std::string& str ) {
-    std::scoped_lock lock(strlock);
-    std::cout << "Executing this thread 2 " << str << "\n";
-    std::this_thread::sleep_for(std::chrono::seconds(time));
 
-}
-void func3(const int& time, const std::string& str ) {
-    std::scoped_lock lock(strlock);
-    std::cout << "Executing this thread 3 " << str << "\n";
-    std::this_thread::sleep_for(std::chrono::seconds(time));
-
-}
 int func4(const int& time, const std::string& str ) {
     std::scoped_lock lock(strlock);
     std::cout << "Executing this thread 3 " << str << "\n";
