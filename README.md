@@ -1,4 +1,4 @@
-Threadpool Implementation 
+C++ Threadpool Implementation 
 
 This project provides an implementation of a threadpool.
 
